@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+	
+<head>
+	
+<meta charset="UTF-8" name="Jarrett Flowers" content="math">
+	
+	
+<title>Math Project</title>
+	
+	
+</head>
+	
+	
+	
+
+<body>
+	<h1>Do Multiplication</h1>
+
+		<br><br>
+		
+		<label for="int1">First Integer:</label>
+	
+	
+	<input type="text" id="int1" name="fInteger">
+	
+	<br /> <br />
+	
+	<label for="int2">Second Integer:</label>
+	
+	
+	<input type="text" id="int2" name="sInteger">
+
+	
+	
+	<div id="add">
+	
+	
+	</div>
+	
+	
+	<button id="save" type="button" >Calculate</button>
+	
+	
+	
+	<h1>Do Division</h1>
+
+		<br><br>
+		
+		<label for="integer1">First Integer:</label>
+	
+	
+	<input type="text" id="integer1" name="fInteger">
+	
+	<br /> <br />
+	
+	<label for="integer2">Second Integer:</label>
+	
+	
+	<input type="text" id="integer2" name="sInteger">
+
+	
+	
+	<div id="divide">
+	
+	
+	</div>
+	
+	
+	<button id="work" type="button" >Calculate</button>
+	
+	<h1>Do Addition</h1>
+
+		<br><br>
+		
+		<label for="integers1">First Integer:</label>
+	
+	
+	<input type="text" id="integers1" name="fInteger">
+	
+	<br /> <br />
+	
+	<label for="integers2">Second Integer:</label>
+	
+	
+	<input type="text" id="integers2" name="sInteger">
+
+	
+	
+	<div id="sub">
+	
+	
+	</div>
+	
+	
+	<button id="works" type="button" >Calculate</button>
+	
+	
+	
+	
+	
+	
+	
+</body>
+	
+	<script>
+	
+		
+		// multiply function
+		const submit = document.getElementById("save");
+		
+	submit.onclick = function (){
+		
+		
+	const int1 = document.getElementById("int1");
+		
+		const int2 = document.getElementById("int2");
+	
+	
+	
+	let x = int1.value ;
+		
+		let h = Number(x);
+		
+	let y = int2.value ;	
+	
+		let j = Number(y);
+		
+	let z = h * y ;
+	
+		document.getElementById("add").innerHTML += z ;
+	
+	
+	};
+		
+		
+		
+		// divide function
+		
+		const calc = document.getElementById("work");
+		
+	calc.onclick = function (){
+		
+		
+	const int1 = document.getElementById("integer1");
+		
+		const int2 = document.getElementById("integer2");
+	
+	
+	
+	let x = integer1.value ;
+		
+		let h = Number(x);
+		
+	let y = integer2.value ;	
+	
+		let j = Number(y);
+		
+	let z = h / y ;
+	
+		document.getElementById("divide").innerHTML += z ;
+	
+	
+	};
+		
+		
+		
+		// addition
+		
+		const calculate = document.getElementById("works");
+		
+	calculate.onclick = function (){
+		
+		
+	const int1 = document.getElementById("integers1");
+		
+		const int2 = document.getElementById("integers2");
+	
+	
+	
+	let x = integers1.value ;
+		
+		let h = Number(x);
+		
+	let y = integers2.value ;	
+	
+		let j = Number(y);
+		
+	let z = Number(h) + Number(y) ;
+	
+		document.getElementById("sub").innerHTML += z ;
+	
+	
+	};
+	
+	</script>
+	
+	
+	
+	
+</html>
